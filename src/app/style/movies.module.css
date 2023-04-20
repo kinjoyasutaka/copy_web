@@ -1,0 +1,132 @@
+.movie_list_container {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+.movie_list_search {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.movie_list_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column-gap: 10px;
+  column-gap: 10px;
+  grid-row-gap: 30px;
+  row-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.movie_copyright {
+  font-size: 0.6em;
+  line-height: 2.2em;
+  color: #666;
+}
+
+.selectbox_area {
+  display: flex;
+}
+
+.selectbox_item {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.selectbox_item:first-child {
+  margin-right: 10px;
+}
+
+.selectbox_inner {
+  position: relative;
+  max-width: 490px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 #c7c7c7;
+}
+
+.selectbox_inner::before {
+  content: "";
+  background-color: #000;
+  width: 10px;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.selectbox_inner::after {
+  content: "";
+  background-color: #000;
+  width: 10px;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: rotate(135deg);
+}
+
+.select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  appearance: none;
+  font-size: 16px;
+  padding: 25px;
+}
+
+.select:not(:-internal-list-box) {
+  overflow: visible !important;
+}
+
+.title_area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.checkbox_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.checkbox_item {
+  position: relative;
+}
+.checkbox_item:hover {
+  opacity: 0.65;
+}
+
+.input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.label {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  word-break: keep-all;
+}
+
+.input:checked + label {
+  border: 1px solid #0d3fa5;
+}

@@ -1,0 +1,49 @@
+.footer {
+  color: #fff;
+  background-color: #1d1d1f;
+  position: absolute; /*←絶対位置*/
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer_logo {
+  margin-bottom: 20px;
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px;
+}
+
+.li {
+  margin-left: 6px;
+}
+.li::before {
+  content: "|";
+  margin-right: 2px;
+}
+
+.li:last-child::after {
+  content: "|";
+  margin-left: 6px;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer_copyright {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
