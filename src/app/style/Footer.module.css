@@ -1,9 +1,6 @@
 .footer {
-  color: #fff;
-  background-color: #1d1d1f;
-  position: absolute; /*←絶対位置*/
-  bottom: 0;
-  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(29, 29, 31);
 }
 
 .footer__wrap {
@@ -40,10 +37,4 @@
 .link {
   cursor: pointer;
   text-decoration: underline;
-}
-
-.footer_copyright {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
 }

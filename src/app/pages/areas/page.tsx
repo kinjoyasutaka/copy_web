@@ -2,6 +2,7 @@ import Layout from "@/app/templetes/Layout";
 import Link from "next/link";
 import styles from "../../style/areas.module.css";
 import { theaters } from "@/app/date/Theaters/theaters";
+import { memo } from "react";
 
 const Areas = () => {
   const title = "劇場一覧";
@@ -15,8 +16,8 @@ const Areas = () => {
             <div className={styles.theater}>
               {theaters.map((theater) => (
                 <Link
-                  key={theater.url}
-                  href={`/theaters/${theater.url}`}
+                  key={theater.id}
+                  href={`/theaters/${theater.id}`}
                   className={styles.button}
                 >
                   {theater.name}

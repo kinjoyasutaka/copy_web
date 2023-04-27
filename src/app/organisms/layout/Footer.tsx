@@ -33,9 +33,11 @@ const Footer = () => {
               </li>
             </ul>
           </small>
-        </div>
-        <div className={styles.footer_copyright}>
-          <small>copyright&copy;2009 STAR THEATERS.All Rights Reserved.</small>
+          <div className={styles.footer_copyright}>
+            <small>
+              copyright&copy;2009 STAR THEATERS.All Rights Reserved.
+            </small>
+          </div>
         </div>
       </footer>
     </>

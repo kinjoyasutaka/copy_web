@@ -1,31 +1,31 @@
-type Theaters = {
-  url: string;
-  name: string;
+export type Theaters = {
+  id: string; //映画館id
+  name: string; //映画館名
 };
 
 export const theaters: Array<Theaters> = [
   {
-    url: "1",
+    id: "1",
     name: "シネマQ",
   },
   {
-    url: "2",
+    id: "2",
     name: "シネマライカム",
   },
   {
-    url: "3",
+    id: "3",
     name: "ミハマ7プレックス",
   },
   {
-    url: "4",
+    id: "4",
     name: "サザンプレックス",
   },
   {
-    url: "5",
+    id: "5",
     name: "シネマパレット",
   },
   {
-    url: "6",
+    id: "6",
     name: "シネマプラザハウス",
   },
 ];
